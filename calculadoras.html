@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!-- Define o tipo de documento como HTML5 -->
+
+<html lang="pt-BR">
+<!-- Início do documento HTML e define o idioma como português do Brasil -->
+
+<head>
+    <!-- Cabeçalho da página (não é visível para o usuário) -->
+    <meta charset="UTF-8">
+    <!-- Define o conjunto de caracteres como UTF-8, que suporta acentos e caracteres especiais -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Garante que a página seja exibida corretamente em dispositivos móveis (responsividade) -->
+
+    <title>Trote Solidário - 2025</title>
+    <!-- Título da aba do navegador -->
+
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Importa o arquivo CSS externo, que define o estilo visual da página -->
+
+    <script src="./js/scripts.js"></script>
+    <!-- Importa o arquivo JavaScript externo, que define comportamentos e funções (como o cálculo dos pontos) -->
+</head>
+
+<body>
+    <!-- Início do corpo visível da página -->
+
+    <header>
+        <!-- Cabeçalho da página. Geralmente usado para título ou logotipo -->
+        Trote Solidário - 2025
+    </header>
+
+    <nav>
+        <!-- Área de navegação (menu principal com os links para outras páginas do site) -->
+        <div id="links-menu">
+            <!-- Div que agrupa os links do menu -->
+            <a href="index.html"> Home </a>
+            <!-- Link para a página principal -->
+            <a href="introducao.html"> Introdução </a>
+            <!-- Link para a página de introdução -->
+            <a href="objetivo.html"> Objetivo </a>
+            <!-- Link para a página com os objetivos do trote -->
+            <a href="formato.html"> Formato </a>
+            <!-- Link para a página explicando o formato do evento -->
+            <a href="gincana.html"> Gincana </a>
+            <!-- Link para a página com informações da gincana -->
+            <a href="integracao.html"> Integração </a>
+            <!-- Link para a página com detalhes da integração -->
+            <a href="observacoes.html"> Observações </a>
+            <!-- Link com observações gerais -->
+            <a href="calculadoras.html"> Calculadoras </a>
+            <!-- Link para esta página de calculadora de pontos -->
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Container que agrupa e centraliza o conteúdo principal da página -->
+
+        <h2>Calculadoras de Pontuação</h2>
+        <!-- Título do conteúdo principal -->
+
+        <div class="calculadora">
+            <!-- Div para a seção de calculadora de pontos -->
+
+            <form>
+                <!-- Formulário onde o usuário insere os dados para calcular a pontuação -->
+
+                <!-- Cada campo do formulário é envolvido por uma div chamada "campos" -->
+
+                <div class="campos">
+                    <label>Selecione a cor da equipe</label>
+                    <!-- Rótulo para o menu de seleção -->
+                    <select id="equipe">
+                        <!-- Menu suspenso para o usuário escolher a equipe -->
+                        <option value="laranja">Laranja</option>
+                        <option value="preta">Preta</option>
+                        <option value="roxa">Roxa</option>
+                        <option value="verde">Verde</option>
+                        <option value="vermelha">Vermelha</option>
+                    </select>
+                </div>
+
+                <!-- Abaixo, cada campo corresponde a um tipo de atividade ou item doado -->
+
+                <div class="campos">
+                    <label>Ação Social (pts)</label>
+                    <input type="number" id="acaosocial" />
+                    <!-- Campo numérico para a pontuação da ação social -->
+                </div>
+
+                <div class="campos">
+                    <label>Homenagem (pts)</label>
+                    <input type="number" id="homenagem" />
+                    <!-- Campo numérico para a pontuação da homenagem -->
+                </div>
+
+                <div class="campos">
+                    <label>Mascote</label>
+                    <input type="number" id="mascote" />
+                    <!-- Campo numérico para pontuar o mascote da equipe -->
+                </div>
+
+                <div class="campos">
+                    <label>Caracterização e animação</label>
+                    <input type="number" id="animacao" />
+                    <!-- Campo para avaliar caracterização e animação -->
+                </div>
+
+                <div class="campos">
+                    <label>Caixas de leite (litros)</label>
+                    <input type="number" id="leite" />
+                    <!-- Número de litros de leite arrecadados -->
+                </div>
+
+                <div class="campos">
+                    <label>Kits alimentação</label>
+                    <input type="number" id="kit" />
+                    <!-- Quantidade de kits de alimentação -->
+                </div>
+
+                <div class="campos">
+                    <label>Latas de suplemento</label>
+                    <input type="number" id="suplemento" />
+                    <!-- Número de latas de suplemento alimentício -->
+                </div>
+
+                <div class="campos">
+                    <label>Pacotes de arroz (kg)</label>
+                    <input type="number" id="arroz" />
+                    <!-- Quilos de arroz arrecadados -->
+                </div>
+
+                <div class="campos">
+                    <label>Pacotes de feijão (kg)</label>
+                    <input type="number" id="feijao" />
+                    <!-- Quilos de feijão arrecadados -->
+                </div>
+
+                <div class="campos">
+                    <label>Pacotes de macarrão (un.)</label>
+                    <input type="number" id="macarrao" />
+                    <!-- Unidades de macarrão doadas -->
+                </div>
+
+                <div class="campos">
+                    <label>Óleos</label>
+                    <input type="number" id="oleo" />
+                    <!-- Quantidade de garrafas de óleo arrecadadas -->
+                </div>
+
+                <div class="campos">
+                    <label>Doações de sangue</label>
+                    <input type="number" id="doacao" />
+                    <!-- Quantidade de doações de sangue feitas -->
+                </div>
+
+                <div class="campos">
+                    <label>Registro audiovisual</label>
+                    <input type="number" id="audiovisual" />
+                    <!-- Pontuação para produção de registro audiovisual -->
+                </div>
+
+                <div class="campos">
+                    <!-- Botão que, ao ser clicado, chama a função JavaScript "calcular()" -->
+                    <button type="button" onclick="calcular()">Calcular</button>
+                    <!-- Local onde será exibido o resultado da pontuação -->
+                    <label id="soma"> </label>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

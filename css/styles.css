@@ -1,0 +1,210 @@
+/* O seletor 'body' estiliza todo o corpo da página web */
+body{
+    font-family: arial, sans-serif; /* Define a fonte principal do site */
+    margin: 0; /* Remove margens externas do body */
+    padding: 0; /* Remove espaçamentos internos do body */
+    background-color: #f7f7f0; /* Cor de fundo do site */
+    text-align: center; /* Alinha texto ao centro */
+}
+
+/* O 'header' é o cabeçalho da página */
+header{
+    background-color: #f7f7f0; /* Cor de fundo verde */
+    color:#262981; /* Cor do texto */
+    padding: 15px 0; /* Espaço interno: 15px cima/baixo, 0 lados */
+    font-size: 24px; /* Tamanho da fonte */
+    font-style: italic;
+}
+
+/* O 'nav' é a barra de navegação da página */
+nav{
+    background-color: #0e6ad2; /* Cor de fundo azul */
+    padding: 10px; /* Espaçamento interno */
+    display: flex; /* Exibe elementos lado a lado */
+    justify-content: space-between; /* Espaça os elementos nas extremidades */
+    align-items: center; /* Alinha verticalmente ao centro */
+    border: 1px solid rgb(255, 225, 0); /* Borda preta */
+}
+
+/* 'links-menu' é um contêiner de links no menu */
+#links-menu{
+    display:flex; /* Exibe os links em linha */
+    gap: 143px; /* Espaço entre os links */
+}
+
+/* Estilo dos links do menu de navegação */
+nav a{
+    color: white; /* Texto branco */
+    text-decoration: none; /* Remove sublinhado */
+    padding: 10px 15px; /* Espaço interno */
+    font-size: 18px; /* Tamanho da fonte */
+    background: #262981; /* Fundo azul escuro */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* Efeito ao passar o mouse sobre os links do menu */
+nav a:hover {
+    background: #003d82; /* Muda cor ao passar o mouse */
+}
+
+/* Estilo geral das imagens */
+img{
+    width: 1900px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+/* '.container' é a área principal do conteúdo */
+.container{
+    width: 80%; /* Ocupa 80% da largura da tela */
+    margin: 20px auto; /* Centraliza com margem */
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+/* Estilo para títulos <h2> */
+h2{
+    text-align: center;
+}
+
+/* Centraliza tabelas com essa classe */
+.tablecenter{
+    text-align: center;
+}
+
+/* Tabela de tipo sanguíneo */
+.tablesangue{
+    text-align: center;
+}
+
+/* Define espaçamento entre colunas */
+.tablesangue td{
+    padding-inline: 80px;
+}
+
+/* Remove bolinha e ajusta posição da lista */
+.tablecenter li{
+    list-style: none;
+    margin-left: -50px;
+}
+
+/* Espaço entre células das tabelas */
+table td{
+    padding-inline: 25px;
+}
+
+/* Alinha cabeçalhos das tabelas */
+table th{
+    padding-inline: 25px;
+    text-align: center;
+}
+
+/* Justifica os itens das listas */
+ul li, ol li{
+    text-align: justify;
+}
+
+/* Classe para centralizar parágrafos */
+.p {
+    text-align: center;
+}
+
+/* Ajusta margem de uma tabela específica */
+.tablealinhado table{
+    margin: -25px 0 15px;
+}
+
+/* Centraliza todas as tabelas */
+table {
+    margin: 0 auto;
+    border-spacing: 0; /* Remove espaço entre células */
+}
+
+/* Classes para colorir células ou textos */
+.laranja{ background-color: orange; font-weight: bold; }
+#laranja{ color: orange; }
+
+.azul{ background-color: rgb(2, 2, 163); color: white; font-weight: bold; }
+
+.preta{ background-color: black; color: white; font-weight: bold; }
+#preto{ color: black; }
+
+.roxo{ background-color: rgb(183, 69, 183); font-weight: bold; }
+#roxo{ color: rgb(183, 69, 183); }
+
+.verde{ background-color: rgb(6, 187, 6); font-weight: bold; }
+#verde{ color: rgb(6, 187, 6); }
+
+.vermelho{ background-color: rgb(240, 30, 30); font-weight: bold; }
+#vermelho{ color: rgb(240, 30, 30); }
+
+.cinza{ background-color: rgb(167, 165, 165); }
+.azulclaro{ background-color: rgba(181, 206, 230, 0.541); }
+.bege{ background-color: beige; }
+
+/* Listas personalizadas */
+.semicone{ list-style: none; }
+
+.campos{
+    margin: 20px; /* Espaço externo */
+}
+
+.circlelist{ list-style: circle; }
+
+ol li{ list-style:decimal; }
+
+.checkmarklist{ list-style: none; }
+.checkmarklist li:before{
+    content: " ✓ "; /* Adiciona símbolo de check */
+}
+
+.arrowlist li{ list-style: none; }
+.arrowlist li:before{
+    content: " ➔ "; /* Adiciona seta antes dos itens */
+}
+
+.sublist li{ list-style: circle; }
+.sublist li:before{ content: none; }
+
+.sublist li ul li{
+    list-style: none;
+}
+.sublist li ul li:before{
+    content: "- "; /* Adiciona hífen */
+}
+
+.hifem li{ list-style: none; }
+.hifem li:before{
+    content: "- "; /* Adiciona hífen */
+}
+
+/* Adiciona símbolo antes de títulos h3 */
+h3:before{
+    content: "⇨ ";
+}
+
+/* Centraliza o título de tabelas */
+.titulotabela{
+    text-align: center;
+    margin-bottom: 0;
+}
+
+/* '.calculadora' estiliza a área de uma calculadora */
+.calculadora{
+    margin: 0 auto;
+    width: 450px;
+}
+
+/* Alinha os inputs da calculadora à direita */
+.calculadora input{
+    float: right;
+}
+
+/* Botões dentro da classe 'campos' */
+.campos button{
+    margin: 0 155px;
+    color: #000e1e;
+}
