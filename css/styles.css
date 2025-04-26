@@ -29,7 +29,7 @@ nav{
 /* 'links-menu' é um contêiner de links no menu */
 #links-menu{
     display:flex; /* Exibe os links em linha */
-    gap: 88px; /* Espaço entre os links */
+    gap: 80px; /* Espaço entre os links */
 }
 
 /* Estilo dos links do menu de navegação */
@@ -49,7 +49,7 @@ nav a:hover {
 
 /* Estilo geral das imagens */
 img{
-    width: 1900px;
+    width: 1500px;
     height: auto;
     margin-right: 20px;
     border-radius: 10px;
