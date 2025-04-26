@@ -29,7 +29,7 @@ nav{
 /* 'links-menu' é um contêiner de links no menu */
 #links-menu{
     display:flex; /* Exibe os links em linha */
-    gap: 143px; /* Espaço entre os links */
+    gap: 88px; /* Espaço entre os links */
 }
 
 /* Estilo dos links do menu de navegação */
